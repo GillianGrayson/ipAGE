@@ -3,7 +3,7 @@ from scipy import stats
 
 
 def perform_statistical_analysis():
-    path = f'../data/'  # Path to the directory with data table
+    path = f'data/'  # Path to the directory with data table
     table_name = f'all_features'  # Name of xlsx table with all features
     features_file = 'biomarkers'  # Name of file with features, which will use to build the clock
 

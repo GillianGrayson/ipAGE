@@ -18,7 +18,7 @@ def calc_metrics(model, X, y, comment, params):
 
 
 def process_clock():
-    path = f'../data/'  # Path to the directory with data table
+    path = f'data/'  # Path to the directory with data table
     table_name = f'all_features'  # Name of xlsx table with all features
     features_file = 'biomarkers'  # Name of file with features, which will use to build the clock
     y_col_name = 'Age'  # Column name of chronological age
