@@ -9,8 +9,8 @@ import copy
 def calc_metrics(model, X, y, comment, params):
     y_pred = model.predict(X)
     score = model.score(X, y)
-    rmse = np.sqrt(mean_squared_error(y_pred, y))
-    mae = mean_absolute_error(y_pred, y)
+    rmse = np.sqrt(mean_squared_error(y, y_pred))
+    mae = mean_absolute_error(y, y_pred)
     params[f'{comment} R2'] = score
     params[f'{comment} RMSE'] = rmse
     params[f'{comment} MAE'] = mae
